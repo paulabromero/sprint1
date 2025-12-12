@@ -1,0 +1,46 @@
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+.hero-image-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+
+#carta{
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card-img-top {
+  width: 350px;
+  height: 300px; /* Tamaño ideal para mobile */
+  object-fit: cover; 
+  border-radius: 8px 8px 0 0; 
+}
+
+.card-img-top{
+    transition: 0.4s ease;
+ }
+
+ .card-img-top:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+ }
