@@ -1,3 +1,9 @@
+/* colores: azul (70, 87, 133) ;  */
+header, body {
+  background-color: rgb(70, 87, 133);
+}
+
+
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -27,6 +33,12 @@
         0 0 0 1px rgba(255, 255, 255, 0.5) inset;
     padding: 20px;
     overflow: hidden;
+}
+/* revisar si lo centra */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra la imagen */
 }
 
 .card-img-top {
