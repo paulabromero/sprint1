@@ -5,23 +5,24 @@ header, body {
 
 
 .hero-section {
-  position: relative;
-  overflow: hidden;
-  min-height: 500px;
-}
-.hero-image-container {
-  padding: 0;
+  min-height: 50vh;              /* Alto del hero */
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero-image{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
+  background-image:url("../img/hero/WhatsApp Image 2025-12-11 at 21.15.33.jpeg");
+
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  
+}  
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: left center;
+  }
 
 
+}
 
 #carta{
     background: rgba(255, 255, 255, 0.95);
@@ -43,16 +44,27 @@ header, body {
 
 .card-img-top {
   width: 350px;
-  height: 300px; /* Tamaño ideal para mobile */
-  object-fit: cover; 
-  border-radius: 8px 8px 0 0; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;      /* Necesario para que margin auto funcione*/
+  margin-left: auto;   
+  margin-right: auto;
+  margin-top: 3%;  
+  margin-bottom: 5%;
+  transition: 0.4s ease;
+} 
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  overflow: hidden;
 }
 
-.card-img-top{
-    transition: 0.4s ease;
- }
 
- .card-img-top:hover{
+
+.card-img-top:hover{
     transform: scale(1.2);
     cursor: pointer;
- }
+}

@@ -13,7 +13,7 @@
 <body>
     
 
-         <!-- NAVBAR -->
+        <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">
@@ -42,40 +42,35 @@
       </div>
     </div>
   </nav>
-  <header class="py-5 py-lg-6 bg-light hero-section">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        
-        <!-- Texto hero -->
-        <div class="col-lg-6">
-          <p class="text-success fw-semibold mb-2">Comida saludable</p>
-          <h1 class="display-5 fw-bold mb-3">
-            Recetas deliciosas <br> para tu cocina diaria
-          </h1>
-          <p class="text-muted mb-4">
-            blablablablablabla 
-          </p>
 
-       
-          <button class="btn btn-outline-success btn-lg mb-2" type="button">
-            Ver recetas populares
-          </button>
-        </div>
+  <!-- header HERO -->
+<header class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
 
-        <!-- Imagen hero -->
-        <div class="col-lg-6 text-center">
-          <div class="hero-image-wrapper mx-auto">
-            <img 
-              src="./assets/img/hero/WhatsApp Image 2025-12-11 at 21.15.33.jpeg"
-              alt="Plato de comida"
-              class="img-fluid rounded-circle hero-image"
-            >
-          </div>
-        </div>
+        <p class="text-success fw-semibold mb-2">
+          Comida saludable
+        </p>
+
+        <h1 class="display-4 fw-bold hero-title">
+          Recetas deliciosas <br>
+          para tu cocina diaria
+        </h1>
+
+        <p class="hero-text">
+          Encuentra recetas fáciles con los ingredientes<br>
+          que ya tienes en casa. Come rico todos los días.
+        </p>
+
+        <a href="#" class="btn btn-success btn-lg hero-btn">
+          Ver recetas populares →
+        </a>
 
       </div>
     </div>
-  </header>
+  </div>
+</header>
     
     <main>
         <!-- buscador y recetas  -->
@@ -83,59 +78,88 @@
             <div class="row ">
                 <!-- BUSCADOR -->
                     
-                        <form class="d-flex justify-content-center" role="search">
-                            <div class="col-md-4"></div>
-                            <div class="col-8 col-md-3 ">
-                                <input class="form-control " type="search" placeholder="Ingresa el ingrediente a buscar" aria-label="Search" />
-                            </div>
-                            <div class="col-4 col-md-1">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                            </div>
-                            <div class="col-md-4"></div>
+                        <form class="d-flex justify-content-center mt-4">
+                           <div class="input-group w-75 w-md-50">
+                            <input
+                              type="search"
+                              class="form-control form-control-lg"
+                              placeholder="Ingresa el ingrediente a buscar"
+                            />
+                            <button class="btn btn-success btn-lg" type="submit">
+                              Buscar
+                            </button>
+                          </div>
                         </form>
                     </div>
-                </nav>
+                
             </div>
         </div>
 <!-- Cards de recetas -->
-       <div class="row row-cols-1 row-cols-md-2 g-4 p-3 mt-3">
+<div class="row row-cols-1 row-cols-md-3 g-5 p-3 mt-1 mx-2">
+
+
   <div class="col">
     <div class="card">
       <img src="./assets/img/cards/1-bowl-proteico.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Bowl Proteico de Quínoa</h5>
+        <h5 class="card-title"> Bowl Proteico de Quínoa</h5>
         <p class="card-text">Ideal para después de tu entrenamiento.</p>
       </div>
     </div>
   </div>
+
   <div class="col">
     <div class="card">
-      <img src="./assets/img/cards/2-crema-verde.jpeg "class="card-img-top" alt="...">
+      <img src="./assets/img/cards/2-crema-verde.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Crema Verde Detox con Brócoli</h5>
         <p class="card-text">Para sentir tu cuerpo más liviano.</p>
       </div>
     </div>
   </div>
+
   <div class="col">
     <div class="card">
       <img src="./assets/img/cards/3-ensalada.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Ensalada Fitness</h5>
+        <p class="card-text">Perfecta para una comida ligera pero nutritiva.</p>
       </div>
     </div>
   </div>
+
   <div class="col">
     <div class="card">
       <img src="./assets/img/cards/4-wok.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Wok de Verduras</h5>
+        <p class="card-text">Rápido, saludable y lleno de sabor.</p>
       </div>
     </div>
   </div>
+
+  <div class="col">
+    <div class="card">
+      <img src="./assets/img/cards/5-avena.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Avena y frutos rojos</h5>
+        <p class="card-text">Perfecto para empezar el día con energía.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+      <img src="./assets/img/cards/6-hamburguesa.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hamburguesa</h5>
+        <p class="card-text">Ideal para llevar y disfrutar en cualquier lugar de picnic.</p>
+      </div>
+    </div>
+  </div>
+
 </div>
+
     </main>
     <footer>
         <!--  -->
